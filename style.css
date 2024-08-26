@@ -84,3 +84,80 @@ header {
     transform: translateX(0px); }
   100% {
     transform: translateX(calc(100% + 25px)); } }
+
+.about-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.img-div {
+  width: 100%;
+  height: 310px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.service-disc {
+  text-align: center;
+  padding: 65px 24px;
+  box-sizing: border-box; }
+  .service-disc h2 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #24303E; }
+  .service-disc p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #808397;
+    line-height: 30px;
+    margin-top: 24px; }
+  .service-disc .learn-more {
+    position: relative;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 32px; }
+    .service-disc .learn-more a {
+      font-size: 15px;
+      font-weight: 900;
+      color: #24303E; }
+    .service-disc .learn-more .background-line {
+      width: 110%;
+      height: 7px;
+      position: absolute;
+      z-index: -1;
+      bottom: -1px;
+      left: -5%;
+      opacity: 0.25;
+      border-radius: 28px; }
+
+.yellow-line {
+  background-color: #FAD400; }
+
+.red-line {
+  background-color: #FE7766; }
+
+.egg-img {
+  background-image: url(./images/mobile/image-transform.jpg); }
+
+.stend-out-img {
+  background-image: url(./images/mobile/image-stand-out.jpg); }
+
+.with-backgr-img {
+  background-position: top;
+  background-size: cover; }
+
+.cherry-backgr {
+  background-image: url(./images/mobile/image-graphic-design.jpg); }
+  .cherry-backgr h2 {
+    margin-top: 370px;
+    color: #24554A; }
+  .cherry-backgr p {
+    color: #24554A; }
+
+.orange-backgr {
+  background-image: url(./images/mobile/image-photography.jpg); }
+  .orange-backgr h2 {
+    margin-top: 370px;
+    color: #052C3B; }
+  .orange-backgr p {
+    color: #052C3B; }
