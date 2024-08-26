@@ -1,12 +1,22 @@
 
+
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+
+
+
 body {
     font-family: "Fraunces", serif;;
 }
 
 
 main {
-    width: 100%;
-    // height: 400px;    
+    width: 100%; 
     background-image: url(./images/mobile/image-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,14 +50,48 @@ header {
 
     .navigation {
         width: calc(100% - 50px);
-        height: 350px;
+        // height: 350px;
         background-color: #fff;
         position: fixed;
         top: 87px;
-
-        clip-path: polygon(0 24px, 93% 24px, 100% 0, 100% 100%, 0 100% );
-        
+        clip-path: polygon(0 24px, 93% 24px, 100% 0, 100% 100%, 0 100% );        
         transform: translateX(calc(100% + 25px));
+
+        ul {          
+            @include flex-column;
+            gap: 32px;
+            padding: 53px 0px 39px 0px;
+            box-sizing: border-box;
+
+            a {
+                font-size: 20px;
+                font-weight: 600;
+                color: #808397;
+
+                // &:first-child {
+                //     color: red;
+                // }
+            }
+
+            & li:last-child a {
+                display: inline-block;
+                width: 140px;
+                height: 56px;
+                background-color: #FBD600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 28px;
+                color: #24303E;
+                font-size: 15px;
+                transition: all 0.2s;
+
+                &:hover {
+                    background-color: rgba(251, 214, 0, 0.7);
+
+                }
+            }
+        }
     }
 
     .menu-button {

@@ -27,12 +27,36 @@ header {
   align-items: center; }
   header .navigation {
     width: calc(100% - 50px);
-    height: 350px;
     background-color: #fff;
     position: fixed;
     top: 87px;
     clip-path: polygon(0 24px, 93% 24px, 100% 0, 100% 100%, 0 100%);
     transform: translateX(calc(100% + 25px)); }
+    header .navigation ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      padding: 53px 0px 39px 0px;
+      box-sizing: border-box; }
+      header .navigation ul a {
+        font-size: 20px;
+        font-weight: 600;
+        color: #808397; }
+      header .navigation ul li:last-child a {
+        display: inline-block;
+        width: 140px;
+        height: 56px;
+        background-color: #FBD600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 28px;
+        color: #24303E;
+        font-size: 15px;
+        transition: all 0.2s; }
+        header .navigation ul li:last-child a:hover {
+          background-color: rgba(251, 214, 0, 0.7); }
   header .menu-button {
     background: none;
     border: none;
