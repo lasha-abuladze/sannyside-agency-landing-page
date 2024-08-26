@@ -1,0 +1,14 @@
+{
+  "name": "sannyside-agency-landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compail:sass": "node-sass ./main.scss ./style.css -w"
+  },
+  "author": "Lasha Abuladze",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

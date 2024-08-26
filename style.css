@@ -1,0 +1,62 @@
+body {
+  font-family: "Fraunces", serif; }
+
+main {
+  width: 100%;
+  background-image: url(./images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 35px 25px  70px 25px;
+  box-sizing: border-box; }
+  main h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #FFF;
+    text-align: center;
+    letter-spacing: 6.25px;
+    margin-top: 88px; }
+  main .arrow-down {
+    margin: auto;
+    display: block;
+    margin-top: 52px; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header .navigation {
+    width: calc(100% - 50px);
+    height: 350px;
+    background-color: #fff;
+    position: fixed;
+    top: 87px;
+    clip-path: polygon(0 24px, 93% 24px, 100% 0, 100% 100%, 0 100%);
+    transform: translateX(calc(100% + 25px)); }
+  header .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; }
+
+.open-nav {
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; }
+
+.close-nav {
+  animation-name: moveInRight;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(calc(100% + 25px)); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(calc(100% + 25px)); } }
