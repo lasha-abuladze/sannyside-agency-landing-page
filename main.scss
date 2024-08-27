@@ -312,3 +312,42 @@ header {
         height: 100%;
     }
 }
+
+
+footer {
+    @include sectionPadding;
+    text-align: center;
+    background-color: #90D4C6;
+
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        a {
+            color: #458D7E;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+
+    .social-media {
+
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 88px;
+
+        svg {
+            fill: #2C7566;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+                fill: #fff;
+            }
+        }
+    }
+}
