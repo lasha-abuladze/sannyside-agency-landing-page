@@ -195,6 +195,11 @@ header {
             left: -5%;
             opacity: 0.25;
             border-radius: 28px;
+            transition: all 0.2s;
+        }
+
+        &:hover .background-line {
+            opacity: 1;
         }
     }
 }
@@ -259,6 +264,11 @@ header {
     @include flex-column;
     text-align: center;
     gap: 64px;
+
+    .xx {
+        @include flex-column;
+        gap: 64px;
+    }
 
     h3 {
         font-size: 16px;
@@ -350,4 +360,206 @@ footer {
             }
         }
     }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    main {
+        // max-width: 1800px;
+        background-image: url(./images/desktop/image-header.jpg);
+    
+        padding: 35px 25px  70px 25px;
+        box-sizing: border-box;
+    
+        h1 {
+            font-size: 56px;
+            margin-top: 105px;
+        }
+    
+        .arrow-down {
+            margin-top: 96px;
+        }
+        
+    
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+    
+        .navigation {
+            max-width: fit-content;
+            height: 100%;
+            position: inherit;
+            clip-path: none;        
+            transform: translateX(0px);
+            z-index: 0;
+            background: none;
+    
+            ul {          
+                flex-direction: row;
+                gap: 47px;
+                padding: 0px;
+    
+                a {
+                    font-size: 18px;
+                    color: #fff;
+                }
+    
+                & li:last-child a {
+                    background-color: #FFF;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.3);
+                        color: #fff;    
+                    }
+                }
+            }
+        }
+    
+        .menu-button {
+            display: none;
+        }
+    }
+
+    .about-service {
+        flex-direction: row;
+    }
+
+    .img-div {
+        width: 50%;
+        height: 500px;
+    }
+
+    .service-disc {
+        width: 50%;
+        padding: 0px;
+        text-align: left;
+        padding-left: 5%;
+        box-sizing: border-box;
+
+        
+    h2 {
+        font-size: 40px;
+
+        span {
+            display: block;
+            margin-top: 9px;
+        }
+    }
+
+    p {
+        width: 445px;
+        margin-top: 32px;
+    }
+
+    .learn-more {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+
+    }
+
+    .egg-img {
+        background-image: url(./images/desktop/image-transform.jpg);
+        order: 2;
+    }
+
+    .stend-out-img {
+        background-image: url(./images/desktop/image-stand-out.jpg);
+    }
+
+    
+    .with-backgr-img {
+        padding: 0px;
+        padding-bottom: 50px;
+        text-align: center;
+
+        p {
+        width: 445px;
+        margin: auto;
+        margin-top: 32px;
+        }
+    }
+
+    .cherry-backgr {
+        width: 100%;
+        background-image: url(./images/desktop/image-graphic-design.jpg);
+
+
+        h2 {
+            margin-top: 550px;
+            color: #24554A;
+        }
+
+    }
+
+
+    .orange-backgr {
+        width: 100%;
+        background-image: url(./images/desktop/image-photography.jpg);
+
+        h2 {
+            margin-top: 550px;
+            color: #24554A;
+        }
+    
+    }
+
+    .client-testimonial {
+
+        .xx {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            
+
+            .client {
+                @include flex-column;
+                width: 100%;
+
+                p {
+                    max-width: 350px;
+                    font-size: 17px;
+
+                }
+
+            }
+        }   
+    
+    }
+
+    
+    .images {
+    display: flex;
+
+    img {
+        width: 25%;
+    }
+    }
+    
+    footer {
+        text-align: center;
+        background-color: #90D4C6;
+
+
+        ul {
+            justify-content: center;
+            gap: 57px;
+            margin-top: 40px;
+        }
+
+    }
+
+    
+
+
+
 }

@@ -132,7 +132,10 @@ header {
       bottom: -1px;
       left: -5%;
       opacity: 0.25;
-      border-radius: 28px; }
+      border-radius: 28px;
+      transition: all 0.2s; }
+    .service-disc .learn-more:hover .background-line {
+      opacity: 1; }
 
 .yellow-line {
   background-color: #FAD400; }
@@ -174,6 +177,11 @@ header {
   align-items: center;
   text-align: center;
   gap: 64px; }
+  .client-testimonial .xx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px; }
   .client-testimonial h3 {
     font-size: 16px;
     font-weight: 900;
@@ -234,3 +242,111 @@ footer {
       transition: all 0.2s; }
       footer .social-media svg:hover {
         fill: #fff; }
+
+@media only screen and (min-width: 1024px) {
+  main {
+    background-image: url(./images/desktop/image-header.jpg);
+    padding: 35px 25px  70px 25px;
+    box-sizing: border-box; }
+    main h1 {
+      font-size: 56px;
+      margin-top: 105px; }
+    main .arrow-down {
+      margin-top: 96px; }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .navigation {
+      max-width: fit-content;
+      height: 100%;
+      position: inherit;
+      clip-path: none;
+      transform: translateX(0px);
+      z-index: 0;
+      background: none; }
+      header .navigation ul {
+        flex-direction: row;
+        gap: 47px;
+        padding: 0px; }
+        header .navigation ul a {
+          font-size: 18px;
+          color: #fff; }
+        header .navigation ul li:last-child a {
+          background-color: #FFF; }
+          header .navigation ul li:last-child a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #fff; }
+    header .menu-button {
+      display: none; }
+  .about-service {
+    flex-direction: row; }
+  .img-div {
+    width: 50%;
+    height: 500px; }
+  .service-disc {
+    width: 50%;
+    padding: 0px;
+    text-align: left;
+    padding-left: 5%;
+    box-sizing: border-box; }
+    .service-disc h2 {
+      font-size: 40px; }
+      .service-disc h2 span {
+        display: block;
+        margin-top: 9px; }
+    .service-disc p {
+      width: 445px;
+      margin-top: 32px; }
+    .service-disc .learn-more {
+      margin-left: 0px;
+      margin-top: 40px; }
+  .egg-img {
+    background-image: url(./images/desktop/image-transform.jpg);
+    order: 2; }
+  .stend-out-img {
+    background-image: url(./images/desktop/image-stand-out.jpg); }
+  .with-backgr-img {
+    padding: 0px;
+    padding-bottom: 50px;
+    text-align: center; }
+    .with-backgr-img p {
+      width: 445px;
+      margin: auto;
+      margin-top: 32px; }
+  .cherry-backgr {
+    width: 100%;
+    background-image: url(./images/desktop/image-graphic-design.jpg); }
+    .cherry-backgr h2 {
+      margin-top: 550px;
+      color: #24554A; }
+  .orange-backgr {
+    width: 100%;
+    background-image: url(./images/desktop/image-photography.jpg); }
+    .orange-backgr h2 {
+      margin-top: 550px;
+      color: #24554A; }
+  .client-testimonial .xx {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px; }
+    .client-testimonial .xx .client {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      .client-testimonial .xx .client p {
+        max-width: 350px;
+        font-size: 17px; }
+  .images {
+    display: flex; }
+    .images img {
+      width: 25%; }
+  footer {
+    text-align: center;
+    background-color: #90D4C6; }
+    footer ul {
+      justify-content: center;
+      gap: 57px;
+      margin-top: 40px; } }
