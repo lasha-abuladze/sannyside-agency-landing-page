@@ -201,3 +201,11 @@ header {
     font-size: 14px;
     font-weight: 600;
     color: #A7AAAD; }
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+  .images img {
+    width: 100%;
+    height: 100%; }
