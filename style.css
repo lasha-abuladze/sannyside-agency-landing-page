@@ -31,7 +31,8 @@ header {
     position: fixed;
     top: 87px;
     clip-path: polygon(0 24px, 93% 24px, 100% 0, 100% 100%, 0 100%);
-    transform: translateX(calc(100% + 25px)); }
+    transform: translateX(calc(100% + 25px));
+    z-index: 5; }
     header .navigation ul {
       display: flex;
       flex-direction: column;
@@ -72,6 +73,9 @@ header {
   animation-name: moveInRight;
   animation-duration: 1.5s;
   animation-fill-mode: forwards; }
+
+.no-scroll {
+  overflow: hidden; }
 
 @keyframes moveInLeft {
   0% {
@@ -161,3 +165,39 @@ header {
     color: #052C3B; }
   .orange-backgr p {
     color: #052C3B; }
+
+.client-testimonial {
+  padding: 65px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 64px; }
+  .client-testimonial h3 {
+    font-size: 16px;
+    font-weight: 900;
+    color: #A7AAAD;
+    letter-spacing: 4px; }
+  .client-testimonial img {
+    border-radius: 100%;
+    width: 72px;
+    margin-bottom: 32px; }
+  .client-testimonial p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #5B636D;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    margin-bottom: 32px;
+    text-align: center; }
+  .client-testimonial strong {
+    font-size: 18px;
+    font-weight: 900;
+    color: #24303E;
+    display: block;
+    margin-bottom: 9px; }
+  .client-testimonial span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #A7AAAD; }

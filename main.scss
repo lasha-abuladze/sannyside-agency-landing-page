@@ -7,6 +7,10 @@
     align-items: center;
 }
   
+@mixin sectionPadding {
+    padding:65px 24px;
+    box-sizing: border-box;
+}
 
 
 
@@ -56,6 +60,7 @@ header {
         top: 87px;
         clip-path: polygon(0 24px, 93% 24px, 100% 0, 100% 100%, 0 100% );        
         transform: translateX(calc(100% + 25px));
+        z-index: 5;
 
         ul {          
             @include flex-column;
@@ -111,6 +116,10 @@ header {
     animation-fill-mode: forwards;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 
 @keyframes moveInLeft {
     0% {
@@ -149,8 +158,7 @@ header {
 
 .service-disc {
     text-align: center;
-    padding: 65px 24px;
-    box-sizing: border-box;
+    @include sectionPadding;
 
     h2 {
         font-size: 32px;
@@ -242,3 +250,53 @@ header {
 
 }
 
+
+
+
+
+.client-testimonial {
+    @include sectionPadding;
+    @include flex-column;
+    text-align: center;
+    gap: 64px;
+
+    h3 {
+        font-size: 16px;
+        font-weight: 900;
+        color: #A7AAAD;
+        letter-spacing: 4px;
+    }
+
+    img {
+        border-radius: 100%;
+        width: 72px;
+        margin-bottom: 32px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 600;
+        color: #5B636D;
+
+        line-height: 32px;
+        letter-spacing: -0.2px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    strong {
+        font-size: 18px;
+        font-weight: 900;
+        color: #24303E;
+        display: block;
+        margin-bottom: 9px;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 600;
+        color: #A7AAAD;
+    }
+
+
+}
